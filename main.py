@@ -19,7 +19,7 @@ class VoxelEngine:
         pg.display.set_mode(WIN_RES, flags=pg.OPENGL | pg.DOUBLEBUF)
         self.ctx = mgl.create_context(require=310)
 
-        self.ctx.enable(flags=mgl.DEPTH_TEST | mgl.CULL_FACE | mgl.BLEND)
+        self.ctx.enable(flags=mgl.DEPTH_TEST | mgl.CULL_FACE | mgl.BLEND)  # remove CULL_FACE for some test
         self.ctx.gc_mode = 'auto'
 
         self.clock = pg.time.Clock()
